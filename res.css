@@ -1,0 +1,85 @@
+/* Reset styles */
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: "Inter Tight", sans-serif;
+
+  color: rgba(252, 249, 249, 0.4);
+  background: #1c2225;
+  margin: 0;
+}
+
+/* default-container-styles */
+
+/* mobile-container */
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+/* ======mobile-img-responsive==== */
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  img {
+    max-width: 100%;
+  }
+}
+
+/* tablet-container */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+/* desktop-container */
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+/* desktop-1440px-container */
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
